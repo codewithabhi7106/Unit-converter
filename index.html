@@ -4,12 +4,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Unit Converter</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-  Hello world
+<div class ="relative min-h-screen">
+   <p id="output" class="text-purple-600 text-center font-bold text-2xl py-8"></p>
+   <div class="flex flex-col bg-gray-300 m-5 rounded-xl p-5 py-10">
+    
+     <input id="value" class="border-2 rounded-lg p-2 m-2"
+type="number"placeholder="Quantity?"/>
+   
+    <select id="value1"class="border-2 rounded-lg p-2 m-2">
+     <option value="kilometres">Kilometres</option>
+     <option value="meter">Meter</option>
+     <option value="centimetres">Centimetre</option>
+     <option value="millimetres">Millimetre</option>
+   </select>
+   
+   <select id="value2"class="border-2 rounded-lg p-2 m-2">
+     <option value="kilometres">Kilometres</option>
+     <option value="meter">Meter</option>
+     <option value="centimetres">Centimetre</option>
+     <option value="millimetres">Millimetre</option>
+   </select>
+   <button onclick="converter()"class="bg-purple-700 border-2 rounded-lg m-2 p-2">Convert
+   </button>
+  </div>
+  <h1 class="bg-gray-500 text-white absolute bottom-0 text-center w-full">@Create by tailwind css</h1>
+</div>
   <script src="script.js"></script>
 </body>
 
